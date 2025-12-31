@@ -21,7 +21,7 @@ export default function ChallengeSection() {
             that don&apos;t drive real change.
           </p>
           <p className="font-medium text-mirika-charcoal">
-            Mirika exists to turn this complexity into a clear, actionable path.
+            MCG exists to turn this complexity into a clear, actionable path.
           </p>
         </div>
       </MainLayout>

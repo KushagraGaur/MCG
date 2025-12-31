@@ -24,7 +24,7 @@ export default function DeepDivePlaceholders() {
             Coming Soon
           </p>
           <h2 className="text-3xl font-semibold text-mirika-charcoal md:text-4xl">
-            Deeper dives into the Mirika approach.
+            Deeper dives into the MCG approach.
           </h2>
           <p className="max-w-3xl text-mirika-graphite">
             These quick placeholders will expand into detailed ESG Advisory, BRSR, and Carbon

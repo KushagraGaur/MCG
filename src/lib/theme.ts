@@ -1,5 +1,5 @@
 export const siteConfig = {
-  title: "Mirika Consulting Group",
+  title: "MCG Consulting Group",
   description:
     "Modern ESG, sustainability, and carbon solutions tailored for bold enterprises.",
   navLinks: [

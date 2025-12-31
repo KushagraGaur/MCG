@@ -16,7 +16,7 @@ export default function Footer() {
         className="flex flex-col gap-4 py-8 md:flex-row md:items-center md:justify-between"
       >
         <p className="text-sm">
-          © {currentYear} Mirika Consulting Group. All rights reserved.
+          © {currentYear} MCG Consulting Group. All rights reserved.
         </p>
         <div className="flex flex-wrap items-center gap-4 text-sm">
           {footerLinks.map((link) => (

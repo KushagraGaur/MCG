@@ -11,7 +11,7 @@ export default function ClosingCTA() {
               Let&apos;s Move Forward
             </p>
             <h2 className="text-3xl font-semibold md:text-4xl">
-              Your Path to Sustainable Growth Starts with Mirika.
+              Your Path to Sustainable Growth Starts with MCG.
             </h2>
             <p className="text-lg text-mirika-earth">
               Contact us today to explore how we can support your ESG journey.
@@ -19,7 +19,7 @@ export default function ClosingCTA() {
           </div>
           <div className="mt-8 flex justify-center">
             <button className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-mirika-forest transition hover:bg-mirika-earth hover:text-mirika-charcoal">
-              <span>Get Started with Mirika</span>
+              <span>Get Started with MCG</span>
             </button>
           </div>
           <p className="mt-6 text-sm text-mirika-earth/80">

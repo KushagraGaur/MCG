@@ -14,7 +14,7 @@ export default function Hero() {
             Navigate Your Sustainability and ESG Goals with Clarity.
           </h1>
           <p className="max-w-2xl text-lg text-mirika-graphite">
-            Mirika Consulting Group blends scientific rigor, modern technology, and practical
+            MCG Consulting Group blends scientific rigor, modern technology, and practical
             advisory to help you measure, manage, and improve your environmental impact.
           </p>
           <div className="mt-2 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -36,7 +36,7 @@ export default function Hero() {
         <div className="w-full">
           <Image
             src="/hero/home-hero.jpeg"
-            alt="Sustainability and ESG consulting by Mirika Consulting Group"
+            alt="Sustainability and ESG consulting by MCG Consulting Group"
             width={800}
             height={600}
             className="h-auto w-full rounded-2xl object-cover shadow-sm"
