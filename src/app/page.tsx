@@ -1,16 +1,18 @@
-import ChallengeSection from "@/components/home/ChallengeSection";
 import ClosingCTA from "@/components/home/ClosingCTA";
-import DeepDivePlaceholders from "@/components/home/DeepDivePlaceholders";
+import EngagementFlow from "@/components/home/EngagementFlow";
 import Hero from "@/components/home/Hero";
-import ServicesGrid from "@/components/home/ServicesGrid";
+import FinancialImpactSnapshot from "@/components/home/FinancialImpactSnapshot";
+import ValueAccelerationVisuals from "@/components/home/ValueAccelerationVisuals";
+import WhoWeWorkWith from "@/components/home/WhoWeWorkWith";
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <ServicesGrid />
-      <ChallengeSection />
-      <DeepDivePlaceholders />
+      <ValueAccelerationVisuals />
+      <FinancialImpactSnapshot />
+      <WhoWeWorkWith />
+      <EngagementFlow />
       <ClosingCTA />
     </>
   );
