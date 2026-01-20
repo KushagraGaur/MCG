@@ -23,8 +23,7 @@ const config: Config = {
         },
       },
       fontFamily: {
-        'crimson': ['Crimson Text', 'serif'],
-        'dm-sans': ['DM Sans', 'sans-serif'],
+        sans: ["DM Sans", "sans-serif"],
       },
     },
   },

@@ -8,22 +8,22 @@ const valueCards = [
   {
     title: "Reduce time-to-reporting and audit readiness",
     description: "Get structured data capture, clear templates, and review cycles that make reporting predictable — not painful.",
-    icon: "📋"
+   
   },
   {
     title: "Avoid compliance surprises",
     description: "Stay aligned with evolving frameworks (GRI, BRSR, ISO) and reduce last-minute risk during reviews and certifications.",
-    icon: "🛡️"
+   
   },
   {
     title: "Turn sustainability into business advantage",
     description: "Strengthen buyer confidence, export competitiveness, and partner trust with credible, consistent disclosures.",
-    icon: "📈"
+  
   },
   {
     title: "Get hands-on execution support",
     description: "We don't just advise — we help you implement, coordinate stakeholders, and stay on track to outcomes.",
-    icon: "👨‍💼"
+
   },
 ];
 
@@ -199,7 +199,7 @@ export default function ValueAccelerationVisuals() {
                   className="relative bg-[#9FCEC2]/35 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
                 >
                   <div className="flex items-start gap-4">
-                    <div className="text-2xl flex-shrink-0">{card.icon}</div>
+                    <div className="text-2xl flex-shrink-0"></div>
                     <div>
                       <h3 className="font-dm-sans font-bold text-lg text-black mb-2">
                         {card.title}
