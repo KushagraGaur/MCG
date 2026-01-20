@@ -10,12 +10,14 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <SectionDivider />
-      <ValueAccelerationVisuals />
-      <FinancialImpactSnapshot />
-      <WhoWeWorkWith />
-      <EngagementFlow />
-      <ClosingCTA />
+
+     
+        <ValueAccelerationVisuals />
+        <FinancialImpactSnapshot />
+        <WhoWeWorkWith />
+        <EngagementFlow />
+        <ClosingCTA />
+
     </>
   );
 }

@@ -1,5 +1,8 @@
+"use client";
+
+import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
-import MainLayout from "@/components/layout/MainLayout";
 
 const costItems = [
   {
@@ -36,118 +39,186 @@ const costItems = [
 
 export default function FinancialImpactSnapshot() {
   return (
-    <section className="bg-white py-24">
-      <MainLayout className="space-y-10">
-        <div className="space-y-3">
-          <h2 className="text-3xl font-semibold text-mirika-charcoal md:text-4xl">
+    <section className="w-full bg-white pt-16">
+      <div className="mx-auto max-w-[1420px] px-8">
+        {/* Header Section - Reduced bottom margin */}
+        <div className="mb-8"> {/* Reduced from mb-16 to mb-8 */}
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="font-crimson text-5xl md:text-7xl lg:text-[96px] leading-[0.9] tracking-tight text-black text-center mb-6"
+          >
             Financial Impact Snapshot
-          </h2>
-          <p className="max-w-3xl text-mirika-graphite md:text-lg">
-            A practical view of where ESG programs typically get expensive — and how MCG helps
-            reduce cost, rework, and delays.
-          </p>
-          <p className="text-sm text-mirika-graphite/80">
-            Illustrative estimates for planning purposes. Actual costs vary by company size, data
-            readiness, and reporting scope.
-          </p>
+          </motion.h2>
+          
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="text-center text-xl md:text-2xl text-gray-600 max-w-[907px] mx-auto font-dm-sans"
+          >
+            A practical view of where ESG programs typically get expensive — and how MCG helps reduce cost, rework, and delays.
+          </motion.p>
         </div>
 
-        <div className="hidden md:block">
-          <div className="grid grid-cols-12 gap-6 border-b border-mirika-earth/40 pb-4 text-xs font-semibold uppercase tracking-[0.2em] text-mirika-graphite">
-            <span className="col-span-5">Cost Driver</span>
-            <span className="col-span-3 text-right">Typical Cost (Without MCG)</span>
-            <span className="col-span-4">How MCG Reduces This</span>
+        {/* Screenshot Image - From Figma - Reduced bottom margin */}
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="relative rounded-xl overflow-hidden shadow-2xl mb-8" // Reduced from mb-16 to mb-8
+        >
+          
+        </motion.div>
+
+        {/* Cost Breakdown Table - Reduced top padding */}
+        <div className="mb-20 pt-4"> {/* Added pt-4 to reduce space above table */}
+          {/* Table Header */}
+          <div className="grid grid-cols-12 gap-8 border-b-2 border-gray-200 pb-5 mb-8 px-0">
+            <div className="col-span-12 md:col-span-6">
+              <h3 className="font-dm-sans font-bold text-lg text-black text-left">Cost Driver</h3>
+            </div>
+            <div className="col-span-6 md:col-span-3">
+              <h3 className="font-dm-sans font-bold text-lg text-black text-left">Typical Cost (Without MCG)</h3>
+            </div>
+            <div className="col-span-6 md:col-span-3">
+              <h3 className="font-dm-sans font-bold text-lg text-black text-left">How MCG Reduces This</h3>
+            </div>
           </div>
-          <div className="divide-y divide-mirika-earth/40">
-            {costItems.map((item) => (
-              <div key={item.driver} className="grid grid-cols-12 gap-6 py-5">
-                <p className="col-span-5 text-base text-mirika-charcoal">{item.driver}</p>
-                <p className="col-span-3 text-right text-base font-semibold text-mirika-charcoal">
-                  {item.withoutCost}
-                </p>
-                <div className="col-span-4 flex items-start gap-3 text-sm text-mirika-graphite">
-                  <span className="mt-0.5 inline-flex h-6 w-6 items-center justify-center rounded-full bg-mirika-emerald/15 text-mirika-forest">
-                    <svg
-                      aria-hidden="true"
-                      viewBox="0 0 20 20"
-                      fill="none"
-                      className="h-3.5 w-3.5"
-                    >
-                      <path
-                        d="M5 10.5l3.2 3.2L15 7"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </span>
-                  <span>{item.mcgReduction}</span>
+
+          {/* Table Rows */}
+          <div className="space-y-4">
+            {costItems.map((item, index) => (
+              <motion.div
+                key={item.driver}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.05 }}
+                className="grid grid-cols-12 gap-8 py-6 px-0 hover:bg-gray-50 rounded-xl transition-colors duration-200"
+              >
+                <div className="col-span-12 md:col-span-6">
+                  <p className="font-dm-sans text-base text-gray-800 text-left">{item.driver}</p>
                 </div>
-              </div>
+                <div className="col-span-6 md:col-span-3">
+                  <p className="font-dm-sans font-bold text-lg text-black text-left">
+                    {item.withoutCost}
+                  </p>
+                </div>
+                <div className="col-span-6 md:col-span-3">
+                  <div className="flex items-start gap-4">
+                    <div className="mt-1 flex-shrink-0">
+                      <div className="h-7 w-7 rounded-full bg-[#A9D5C9] flex items-center justify-center">
+                        <svg
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          className="h-3.5 w-3.5 text-mirika-forest"
+                        >
+                          <path
+                            d="M5 10.5l3.2 3.2L15 7"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <p className="font-dm-sans text-sm text-gray-600 text-left">{item.mcgReduction}</p>
+                  </div>
+                </div>
+              </motion.div>
             ))}
           </div>
+          
+          {/* Footnote */}
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center text-lg text-black mt-12 mb-12 font-dm-sans"
+          >
+            Illustrative estimates for planning purposes. Actual costs vary by company size, data readiness, and reporting scope.
+          </motion.p>
         </div>
 
-        <div className="space-y-4 md:hidden">
-          {costItems.map((item) => (
-            <div
-              key={item.driver}
-              className="rounded-2xl border border-mirika-earth/40 bg-white p-5 shadow-[0_12px_36px_-30px_rgba(12,59,46,0.3)]"
-            >
-              <h3 className="text-base font-semibold text-mirika-charcoal">{item.driver}</h3>
-              <div className="mt-3 space-y-2 text-sm text-mirika-graphite">
-                <p className="flex items-center justify-between">
-                  <span className="font-medium text-mirika-charcoal">Typical Cost</span>
-                  <span className="font-semibold text-mirika-charcoal">{item.withoutCost}</span>
-                </p>
-                <div className="flex items-start gap-2">
-                  <span className="mt-0.5 inline-flex h-5 w-5 items-center justify-center rounded-full bg-mirika-emerald/15 text-mirika-forest">
-                    <svg
-                      aria-hidden="true"
-                      viewBox="0 0 20 20"
-                      fill="none"
-                      className="h-3 w-3"
-                    >
-                      <path
-                        d="M5 10.5l3.2 3.2L15 7"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </span>
-                  <span>{item.mcgReduction}</span>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <div className="rounded-3xl border border-mirika-earth/40 bg-mirika-softGrey p-6 md:p-8">
-          <div className="space-y-3">
-            <h3 className="text-2xl font-semibold text-mirika-charcoal md:text-3xl">
+        {/* Summary Card - From Figma */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="bg-[#E8F2F0] rounded-xl p-8 md:p-12 mb-16"
+        >
+          <div className="text-center max-w-[969px] mx-auto">
+            <h3 className="font-crimson text-3xl md:text-[45px] leading-[0.9] tracking-tight text-black mb-6">
               Reduce ESG execution cost and complexity
             </h3>
-            <p className="text-mirika-graphite md:text-lg">
-              For most organizations, we help reduce overall effort, rework, and delay costs by at
-              least 50% by bringing structure, templates, and hands-on execution support.
+            
+            <p className="font-dm-sans text-xl text-gray-600 mb-8 max-w-[907px] mx-auto">
+              For most organizations, we help reduce overall effort, rework, and delay costs by at least 50% by bringing structure, templates, and hands-on execution support.
+            </p>
+            
+            {/* CTA Button */}
+            <div className="flex justify-center mb-6">
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center bg-mirika-forest text-white text-sm font-dm-sans font-bold px-8 py-4 rounded-full hover:bg-[#2C554A] transition min-w-[200px]"
+              >
+                Talk to Our ESG Experts
+              </Link>
+            </div>
+            
+            <p className="font-dm-sans text-sm text-gray-600">
+              We'll respond with the best next step based on your industry and reporting needs.
             </p>
           </div>
-          <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
-            <Link
-              href="/contact"
-              className="inline-flex min-h-[44px] w-full items-center justify-center rounded-full bg-mirika-forest px-6 py-3 text-sm font-medium text-white transition hover:bg-mirika-emerald sm:w-auto md:text-base"
+        </motion.div>
+
+        {/* Mobile View */}
+        <div className="md:hidden space-y-4">
+          <h3 className="font-dm-sans font-bold text-xl text-black mb-4">Cost Breakdown</h3>
+          {costItems.map((item, index) => (
+            <motion.div
+              key={item.driver}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.05 }}
+              className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm"
             >
-              Talk to Our ESG Experts
-            </Link>
-            <p className="text-sm text-mirika-graphite">
-              We’ll respond with the best next step based on your industry and reporting needs.
-            </p>
-          </div>
+              <h4 className="font-dm-sans font-bold text-base text-black mb-3 text-left">{item.driver}</h4>
+              <div className="space-y-2">
+                <div className="flex justify-between items-center">
+                  <span className="font-dm-sans text-sm text-gray-600">Typical Cost</span>
+                  <span className="font-dm-sans font-bold text-base text-black">{item.withoutCost}</span>
+                </div>
+                <div className="flex items-start gap-2 pt-2 border-t border-gray-100">
+                  <div className="mt-1 flex-shrink-0">
+                    <div className="h-5 w-5 rounded-full bg-[#A9D5C9] flex items-center justify-center">
+                      <svg
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        className="h-2.5 w-2.5 text-mirika-forest"
+                      >
+                        <path
+                          d="M5 10.5l3.2 3.2L15 7"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <p className="font-dm-sans text-sm text-gray-600 text-left">{item.mcgReduction}</p>
+                </div>
+              </div>
+            </motion.div>
+          ))}
         </div>
-      </MainLayout>
+      </div>
     </section>
   );
 }

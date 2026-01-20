@@ -1,50 +1,100 @@
-import Image from "next/image";
+"use client";
+
+import { useRef } from "react";
+import { useScroll, motion, useTransform } from "framer-motion";
 import Link from "next/link";
-import { siteConfig } from "@/lib/theme";
+import Image from "next/image";
 
 export default function Hero() {
+  const containerRef = useRef<HTMLDivElement>(null);
+  
+  // For scroll animations
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start start", "end start"]
+  });
+  
+  // Only zoom effect - no position movement
+  const imageScale = useTransform(scrollYProgress, [0, 1], [1, 1.3]); // Zooms from 100% to 130%
+
   return (
-    <section className="w-full bg-mirika-softGrey py-16 md:py-20">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-4 md:grid-cols-12 md:gap-12 md:px-8">
-        <div className="space-y-4 text-left md:col-span-6 lg:col-span-5">
-          <h1 className="text-3xl leading-tight text-mirika-charcoal md:text-5xl md:leading-tight">
+    <section ref={containerRef} className="relative w-full bg-white overflow-hidden min-h-screen -mb-20">
+      
+      {/* Main Hero Content */}
+      <div className="relative pt-10 pb-40">
+        <div className="mx-auto max-w-[1420px] px-8">
+          
+          {/* Main Heading - From Figma */}
+          <h1 className="font-crimson font-semibold text-center text-5xl md:text-7xl lg:text-6xl leading-none tracking-tight text-black max-w-7xl mx-auto">
             Accelerating ESG, Sustainability, and Compliance Outcomes for Indian Enterprises
           </h1>
-          <p className="max-w-2xl text-lg text-mirika-graphite">
-            From ESG reporting to carbon accounting and certifications — we provide end-to-end
-            planning, execution, and hands-on support.
+          
+          {/* Subtitle */}
+          <p className="mt-8 text-center text-xl text-gray-600 max-w-6xl mx-auto font-dm-sans">
+            From ESG reporting to carbon accounting and certifications — we provide end-to-end planning, 
+            execution, and hands-on support. Trusted by export-oriented manufacturers, infrastructure firms, 
+            and regulated enterprises.
           </p>
-          <p className="text-sm text-mirika-graphite/80 md:text-base">
-            Trusted by export-oriented manufacturers, infrastructure firms, and regulated
-            enterprises.
-          </p>
-          <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+          
+          {/* CTA Buttons - From Figma */}
+          <div className="mt-16 flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
             <Link
               href="/contact"
-              className="inline-flex min-h-[44px] w-full items-center justify-center rounded-full bg-mirika-forest px-6 py-3 text-sm font-medium text-white transition hover:bg-mirika-emerald sm:w-auto md:text-base"
+              className="inline-flex items-center justify-center bg-[#A9D5C9] text-black text-sm font-dm-sans font-bold px-8 py-4 rounded-full hover:bg-[#9FCEC2] transition min-w-[200px]"
             >
-              {siteConfig.ctaLabel}
+              Talk to Our ESG Experts
             </Link>
             <Link
-              href="/sustainability-consulting/our-services"
-              className="inline-flex min-h-[44px] w-full items-center justify-center rounded-full border border-mirika-forest bg-white px-6 py-3 text-sm font-medium text-mirika-forest transition hover:border-mirika-emerald hover:bg-mirika-emerald hover:text-white sm:w-auto md:text-base"
+              href="/services"
+              className="inline-flex items-center justify-center bg-mirika-forest text-white text-sm font-dm-sans font-bold px-8 py-4 rounded-full hover:bg-[#2C554A] transition min-w-[200px]"
             >
               Explore Our Services
             </Link>
           </div>
-        </div>
+          
+          {/* Tablet - Fixed in place, no movement */}
+          <div className="relative mt-32 mx-auto w-full max-w-[1200px] mt-8">
+            {/* Tablet Frame - Clean border */}
+            <div className="relative rounded-[30px] overflow-hidden shadow-2xl border-[12px] border-mirika-forest bg-mirika-forest">
+              {/* Tablet Screen Container */}
+              <div className="relative overflow-hidden rounded-[18px] h-full">
+                {/* Image zooms in as you scroll */}
+                <motion.div 
+                  style={{ scale: imageScale }}
+                  className="relative w-full h-full"
+                >
+                  <Image
+                    src="/hero/home-hero.jpeg"
+                    alt="Sustainability and ESG consulting by MCG Consulting Group"
+                    width={1200}
+                    height={900}
+                    className="w-full h-full object-cover"
+                    priority
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+                  />
+                </motion.div>
+                
+                {/* Subtle screen reflection effect */}
+                <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-transparent via-transparent to-black/10 mix-blend-overlay"></div>
+              </div>
+              
+              {/* Home Button */}
+              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
+                <div className="w-20 h-1.5 bg-white/40 rounded-full"></div>
+              </div>
+              
+              {/* Camera/speaker cutout */}
+              <div className="absolute top-3 left-1/2 transform -translate-x-1/2 flex items-center gap-2">
+                <div className="w-2 h-2 rounded-full bg-white/30"></div>
+                <div className="w-16 h-1.5 rounded-full bg-white/30"></div>
+              </div>
+            </div>
 
-        <div className="flex w-full items-center justify-center md:col-span-6 lg:col-span-7">
-          <Image
-            src="/hero/home-hero.jpeg"
-            alt="Sustainability and ESG consulting by MCG Consulting Group"
-            width={1200}
-            height={900}
-            className="h-auto w-full rounded-2xl object-cover shadow-sm"
-            priority
-          />
+          </div>
+          
         </div>
       </div>
+     
     </section>
   );
 }
