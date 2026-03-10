@@ -954,20 +954,41 @@ export const pageContent: Record<string, PageContent> = {
     ),
     faqs: [
       {
-        question: "What makes Mirika different?",
+        question: "What does Mirika Consulting Group specialize in?",
         answer:
-          "We combine scientific rigor with executive-ready reporting and delivery.",
+          "Mirika Consulting Group specializes in ESG, sustainability, and compliance consulting. We help businesses understand their environmental, social, and governance impact, identify operational and regulatory gaps, and implement practical solutions aligned with Indian regulations and global standards such as GRI, CDP, and the UN Global Compact.",
       },
       {
-        question: "Who leads engagements?",
+        question: "What types of organizations does Mirika Consulting work with?",
         answer:
-          "Senior advisors lead strategy with dedicated analysts and project managers.",
+          "We work with a diverse range of organizations, including MSMEs, startups, mid-sized companies, and large enterprises. Our clients span sectors such as hospitality, logistics and transport, real estate and infrastructure, manufacturing, and professional services. Our advisory approach is tailored to each organization’s size, sector, and maturity level.",
       },
       {
-        question: "Do you support long-term partnerships?",
+        question: "Why is ESG important for businesses today?",
         answer:
-          "Yes. We offer ongoing reporting and sustainability program support.",
+          "ESG has become a critical business requirement rather than a voluntary initiative. Strong ESG practices help businesses manage risks, stay compliant with evolving regulations, improve operational efficiency, attract investors, and build long-term trust with customers, partners, and stakeholders.",
       },
+      {
+        question: "How does Mirika Consulting add value beyond compliance?",
+        answer:
+          "Our focus goes beyond checkbox compliance. We connect ESG and sustainability initiatives with real business outcomes such as cost optimization, operational efficiency, risk mitigation, and access to funding or tenders. This ensures sustainability efforts are both practical and financially meaningful.",
+      },
+      {
+        question: "Do MSMEs and startups need ESG and sustainability consulting?",
+        answer:
+          "Yes. MSMEs and startups increasingly face ESG expectations from investors, lenders, corporate clients, and regulators. Early ESG alignment helps future-proof operations, improves eligibility for funding and partnerships, and reduces compliance risks as the business scales. ",
+      },
+      {
+        question: "What standards and frameworks does Mirika Consulting work with?",
+        answer:
+          "We work with globally recognized frameworks and certifications including ISO standards (ISO 14001, ISO 9001, ISO 21001, ISO 45001), GRI Reporting, Scope 1–3 carbon accounting, CDP disclosures, CSR strategy, Ecotel standards, and sustainable procurement frameworks.",
+      },
+      {
+        question: "How can businesses engage with Mirika Consulting Group?",
+        answer:
+          "Businesses can engage with us by reaching out through our website or official contact channels. We begin with an initial discussion to understand your requirements and then recommend a structured, customized approach aligned with your business goals and compliance needs.",
+      },
+
     ],
     rightRail: buildRightRail(
       "Built for credibility-first ESG partnerships.",
