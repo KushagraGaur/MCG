@@ -862,25 +862,45 @@ export const pageContent: Record<string, PageContent> = {
     ),
     faqs: [
       {
-        question: "How are sustainability consulting services scoped?",
-        answer:
-          "We start with discovery and scope based on your goals, data maturity, and compliance needs.",
-      },
-      {
-        question: "Do you work alongside internal teams?",
-        answer:
-          "Yes. We partner with internal stakeholders and build shared ownership.",
-      },
-      {
-        question: "Can services be delivered independently of reporting?",
-        answer:
-          "Yes. Services can be modular and aligned to your current priorities.",
-      },
-      {
-        question: "What industries do you typically support?",
-        answer:
-          "We work across manufacturing, services, and regulated sectors with tailored delivery.",
-      },
+  question: "What ESG services does Mirika Consulting Group offer?",
+  answer:
+    "Mirika Consulting Group provides end-to-end ESG and sustainability services, including ESG audits and certification readiness, ESG and GRI reporting, ISO audits, waste and water management strategies, Scope 1–3 carbon accounting, CDP disclosures, CSR strategy, and sustainable procurement advisory. Our services are designed to support both regulatory compliance and long-term business value.",
+},
+{
+  question: "What is the difference between ESG consulting and environmental consulting?",
+  answer:
+    "ESG consulting covers environmental, social, and governance aspects of a business, focusing on risk management, compliance, and stakeholder expectations. Environmental consulting is a core part of ESG and specifically addresses areas such as emissions, waste, water, energy use, and environmental compliance. Together, they help businesses operate responsibly and remain audit-ready.",
+},
+{
+  question: "What is an ESG audit, and when should a business conduct one?",
+  answer:
+    "An ESG audit is a structured evaluation of a company's policies, processes, and operational practices across environmental, social, and governance parameters. Businesses should conduct an ESG audit when preparing for certifications, investor due diligence, regulatory reviews, supply-chain requirements, or when seeking to improve sustainability performance and cost efficiency.",
+},
+{
+  question: "How does carbon accounting help businesses reduce environmental impact?",
+  answer:
+    "Carbon accounting measures greenhouse gas emissions across Scope 1, Scope 2, and Scope 3 activities. By understanding emission sources, businesses can implement targeted reduction strategies, improve energy efficiency, meet disclosure requirements, and strengthen their climate commitments while supporting cost optimization and compliance.",
+},
+{
+  question: "Which ESG standards and frameworks are commonly used in India?",
+  answer:
+    "Commonly used ESG and sustainability frameworks in India include ISO standards (such as ISO 14001 and ISO 45001), GRI Reporting, Business Responsibility and Sustainability Reporting (BRSR), Scope 1–3 carbon accounting, CDP disclosures, and sector-specific certifications like Ecotel, IGBC, and GRIHA. Alignment with these frameworks improves credibility and regulatory readiness.",
+},
+{
+  question: "Can ESG and environmental initiatives be customized for different industries?",
+  answer:
+    "Yes. ESG and environmental requirements vary significantly across sectors. We customize our approach for industries such as hospitality, logistics, real estate, infrastructure, manufacturing, and services—ensuring that sustainability initiatives are practical, relevant, and aligned with operational realities.",
+},
+{
+  question: "How do ESG services support business growth and funding opportunities?",
+  answer:
+    "Strong ESG performance enhances investor confidence, improves access to green financing, supports tender eligibility, and strengthens relationships with corporate clients. ESG services help businesses demonstrate transparency, risk awareness, and responsible governance—factors that are increasingly critical for long-term growth.",
+},
+{
+  question: "Do small businesses and startups really need ESG or sustainability audits?",
+  answer:
+    "Yes. ESG is no longer limited to large corporations. MSMEs and startups increasingly require ESG alignment to access funding, participate in tenders, meet supply-chain requirements, and stay compliant with evolving regulations. Early adoption helps reduce future risks, improve cost efficiency, and build long-term credibility with investors and partners.",
+},
     ],
     rightRail: buildRightRail(
       "A services-first consulting model built for executive decision-making.",
