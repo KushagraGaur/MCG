@@ -135,7 +135,7 @@ export default function PageShell({ content }: { content: PageContent }) {
   const methodSectionTitle = content.methodSectionTitle ?? "Our Method";
   const methodSectionDescription =
     content.methodSectionDescription ??
-    "A structured, evidence-first approach built for ESG credibility.";
+    "A structured, evidence-led approach designed for ESG accuracy and audit confidence.";
   const proofSectionTitle = content.proofSectionTitle ?? "Proof & Trust";
   const proofSectionDescription =
     content.proofSectionDescription ??

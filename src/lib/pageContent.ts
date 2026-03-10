@@ -83,21 +83,21 @@ export type PageContent = {
 
 const defaultMethodSteps: MethodStep[] = [
   {
-    title: "Discovery",
-    description: "Align on scope, reporting boundaries, and stakeholder expectations.",
-  },
-  {
-    title: "Data Collection",
-    description: "Gather policies, operational data, and supporting evidence in one place.",
-  },
-  {
-    title: "Analysis & Reporting",
-    description: "Validate data, map to standards, and draft decision-ready outputs.",
-  },
-  {
-    title: "Review + Audit Readiness",
-    description: "Quality assurance, leadership review, and audit-ready documentation.",
-  },
+  title: "Discovery & Alignment",
+  description: "Define scope, reporting boundaries, material topics, and stakeholder expectations to ensure clarity from the outset.",
+},
+{
+  title: "Data Collection & Validation",
+  description: "Consolidate policies, operational data, and supporting evidence into a single, structured framework.",
+},
+{
+  title: "Analysis & Reporting",
+  description: "Assess performance, map findings to relevant ESG and compliance standards, and develop decision-ready outputs.",
+},
+{
+  title: "Review & Audit Readiness",
+  description: "Conduct quality checks, leadership review, and prepare documentation that is aligned, defensible, and audit-ready.",
+},
 ];
 
 const defaultProofStats: ProofStat[] = [
@@ -129,11 +129,13 @@ const buildWhatYouGet = (
   timeline: string,
   inputs: string,
   artifacts: string,
+  governance: string,
 ): ValueCard[] => [
-  { title: "Key Deliverables", description: deliverables },
-  { title: "Timeline", description: timeline },
-  { title: "Required Inputs", description: inputs },
-  { title: "Output Artifacts", description: artifacts },
+  { title: "Defined Deliverables", description: deliverables },
+  { title: "Dedicated Advisory Support", description: timeline },
+  { title: "Aligned Timelines", description: inputs },
+  { title: "Clear Inputs & Governance", description: artifacts},
+  { title: "Practical Output Artifacts", description: governance},
 ];
 
 const buildRightRail = (
@@ -962,10 +964,11 @@ export const pageContent: Record<string, PageContent> = {
     eyebrow: "Our Company",
     primaryCtaLabel: "Contact Us",
     whatYouGet: buildWhatYouGet(
-      "A dedicated ESG partner, senior advisory access, and clear delivery ownership.",
-      "Engagement timelines tailored to your reporting and compliance cycles.",
-      "A clear view of your goals, data maturity, and stakeholder priorities.",
-      "A documented engagement plan, project governance, and accountability map.",
+      "Actionable insights, documented outputs, and decision-ready recommendations aligned with your ESG and compliance goals.",
+      "Direct access to experienced ESG consultants with clear ownership and senior-level oversight.",
+      "Project timelines mapped to your reporting cycles, regulatory deadlines, and business priorities.",
+      "A transparent view of required data, stakeholder involvement, and a well-defined engagement framework.",
+      "A documented engagement roadmap, governance structure, and accountability framework to support effective execution.",
     ),
     methodSteps: defaultMethodSteps,
     proof: buildProof(
