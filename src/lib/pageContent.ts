@@ -129,14 +129,19 @@ const buildWhatYouGet = (
   timeline: string,
   inputs: string,
   artifacts: string,
-  governance: string,
-): ValueCard[] => [
-  { title: "Defined Deliverables", description: deliverables },
-  { title: "Dedicated Advisory Support", description: timeline },
-  { title: "Aligned Timelines", description: inputs },
-  { title: "Clear Inputs & Governance", description: artifacts},
-  { title: "Practical Output Artifacts", description: governance},
-];
+  governance?: string,
+): ValueCard[] => {
+  const cards: ValueCard[] = [
+    { title: "Defined Deliverables", description: deliverables },
+    { title: "Dedicated Advisory Support", description: timeline },
+    { title: "Aligned Timelines", description: inputs },
+    { title: "Clear Inputs & Governance", description: artifacts },
+  ];
+  if (governance) {
+    cards.push({ title: "Practical Output Artifacts", description: governance });
+  }
+  return cards;
+};
 
 const buildRightRail = (
   focus: string,
