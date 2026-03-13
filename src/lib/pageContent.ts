@@ -134,7 +134,7 @@ function buildWhatYouGet (
     { title: "Defined Deliverables", description: deliverables },
     { title: "Dedicated Advisory Support", description: timeline },
     { title: "Aligned Timelines", description: inputs },
-    { title: "Clear Inputs & Governance", description: artifacts },
+    { title: "Clear Inputs & Governance", description: artifacts }
   ];
 };
 
