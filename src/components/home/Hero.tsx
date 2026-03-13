@@ -26,14 +26,14 @@ export default function Hero() {
           
           {/* Main Heading - From Figma */}
           <h1 className="font-crimson font-semibold text-center text-5xl md:text-7xl lg:text-6xl leading-none tracking-tight text-black max-w-7xl mx-auto">
-            Accelerating ESG, Sustainability, and Compliance Outcomes for Indian Enterprises
+            Accelerating ESG, Sustainability, and Compliance Outcomes
           </h1>
           
           {/* Subtitle */}
           <p className="mt-8 text-center text-xl text-gray-600 max-w-6xl mx-auto font-dm-sans">
-            From ESG reporting to carbon accounting and certifications — we provide end-to-end planning, 
-            execution, and hands-on support. Trusted by export-oriented manufacturers, infrastructure firms, 
-            and regulated enterprises.
+            <b>Practical ESG and environmental consulting that helps businesses stay audit-ready, reduce risk, and meet evolving regulatory and buyer expectations.</b>
+          <br></br>
+            We support organizations facing growing ESG, environmental, and compliance requirements by translating complex frameworks into structured, defensible, and implementation-ready solutions.
           </p>
           
           {/* CTA Buttons - From Figma */}

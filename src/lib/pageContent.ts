@@ -129,7 +129,7 @@ const buildWhatYouGet = (
   timeline: string,
   inputs: string,
   artifacts: string,
-  governance?: string,
+  governance?: string
 ): ValueCard[] => {
   const cards: ValueCard[] = [
     { title: "Defined Deliverables", description: deliverables },

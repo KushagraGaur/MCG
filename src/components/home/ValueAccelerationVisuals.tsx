@@ -150,7 +150,7 @@ export default function ValueAccelerationVisuals() {
                 viewport={{ once: true }}
                 className="font-crimson text-5xl md:text-7xl lg:text-[96px] leading-[0.9] tracking-tight text-black"
               >
-                What this means for you
+                What this means for your business
               </motion.h2>
               <motion.p 
                 initial={{ opacity: 0, x: -50 }}
