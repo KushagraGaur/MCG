@@ -124,12 +124,12 @@ const buildProof = (frameworks: string[], focus: string): Proof => ({
   caseStudies: buildCaseStudies(focus),
 });
 
-const buildWhatYouGet = (
+function buildWhatYouGet (
   deliverables: string,
   timeline: string,
   inputs: string,
   artifacts: string
-): ValueCard[] => {
+): ValueCard[]  {
   return [
     { title: "Defined Deliverables", description: deliverables },
     { title: "Dedicated Advisory Support", description: timeline },
