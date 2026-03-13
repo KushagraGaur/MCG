@@ -183,7 +183,7 @@ export const pageContent: Record<string, PageContent> = {
       "Certification readiness assessment, gap register, and prioritized action plan.",
       "Typically 6-10 weeks depending on evidence maturity and auditor timelines.",
       "Current policies, ESG data sources, prior audit findings, and governance documents.",
-      "Audit-ready evidence pack, control mappings, and certification submission support.",
+      "Audit-ready evidence pack, control mappings, and certification submission support."
     ),
     methodSteps: defaultMethodSteps,
     proof: buildProof(
@@ -223,7 +223,7 @@ export const pageContent: Record<string, PageContent> = {
       "Materiality mapping, disclosure matrix, and GRI content index.",
       "Typically 4-8 weeks depending on data readiness and stakeholder input.",
       "Operational metrics, HR and governance data, and prior reporting history.",
-      "Draft report narrative, data tables, and assurance-ready workpapers.",
+      "Draft report narrative, data tables, and assurance-ready workpapers."
     ),
     methodSteps: defaultMethodSteps,
     proof: buildProof(
@@ -263,7 +263,7 @@ export const pageContent: Record<string, PageContent> = {
       "BRSR disclosure mapping, leadership questionnaires, and SEBI-aligned reporting.",
       "Typically 4-6 weeks depending on data availability and review cycles.",
       "Value chain metrics, governance documentation, and policy disclosures.",
-      "Completed BRSR report, annexures, and audit-ready evidence trail.",
+      "Completed BRSR report, annexures, and audit-ready evidence trail."
     ),
     methodSteps: defaultMethodSteps,
     proof: buildProof(
@@ -303,7 +303,7 @@ export const pageContent: Record<string, PageContent> = {
       "ISO gap analysis, control mapping, and implementation roadmap.",
       "Typically 6-12 weeks based on site readiness and audit scheduling.",
       "Operational procedures, policy documents, and prior audit records.",
-      "Audit-ready evidence pack, procedures library, and corrective actions log.",
+      "Audit-ready evidence pack, procedures library, and corrective actions log."
     ),
     methodSteps: defaultMethodSteps,
     proof: buildProof(
@@ -343,7 +343,7 @@ export const pageContent: Record<string, PageContent> = {
       "Executive briefing, boundary definition, and carbon accounting readiness review.",
       "Typically 2-4 weeks for an initial baseline and roadmap.",
       "Utility data, fleet and travel records, and supplier information as available.",
-      "Baseline inventory summary, data gap analysis, and next-step roadmap.",
+      "Baseline inventory summary, data gap analysis, and next-step roadmap."
     ),
     methodSteps: defaultMethodSteps,
     proof: buildProof(
@@ -382,7 +382,7 @@ export const pageContent: Record<string, PageContent> = {
       "Scope 1-3 inventory, emissions factor methodology, and baseline report.",
       "Typically 6-10 weeks depending on data availability and scope.",
       "Energy, fuel, travel, procurement, and supplier activity data.",
-      "Inventory workbook, methodology memo, and audit-ready evidence trail.",
+      "Inventory workbook, methodology memo, and audit-ready evidence trail."
     ),
     methodSteps: defaultMethodSteps,
     proof: buildProof(
@@ -422,7 +422,7 @@ export const pageContent: Record<string, PageContent> = {
       "Credit sourcing strategy, due diligence checklist, and procurement support.",
       "Typically 3-6 weeks depending on market availability and review cycles.",
       "Reduction targets, budget parameters, and risk appetite inputs.",
-      "Verified credit shortlist, quality assessment memo, and purchase guidance.",
+      "Verified credit shortlist, quality assessment memo, and purchase guidance."
     ),
     methodSteps: defaultMethodSteps,
     proof: buildProof(
@@ -462,7 +462,7 @@ export const pageContent: Record<string, PageContent> = {
       "Materiality map, supplier engagement plan, and compliance roadmap.",
       "Typically 6-10 weeks based on facility count and data access.",
       "Water, energy, chemical use, and supplier audit data.",
-      "Factory scorecards, reporting templates, and buyer-ready evidence.",
+      "Factory scorecards, reporting templates, and buyer-ready evidence."
     ),
     methodSteps: defaultMethodSteps,
     proof: buildProof(
@@ -502,7 +502,7 @@ export const pageContent: Record<string, PageContent> = {
       "Facility sustainability assessment, compliance roadmap, and KPI dashboard.",
       "Typically 6-12 weeks depending on site complexity and data maturity.",
       "Energy, waste, water, and safety metrics across facilities.",
-      "Baseline report, improvement roadmap, and audit-ready documentation.",
+      "Baseline report, improvement roadmap, and audit-ready documentation."
     ),
     methodSteps: defaultMethodSteps,
     proof: buildProof(
@@ -542,7 +542,7 @@ export const pageContent: Record<string, PageContent> = {
       "Fleet emissions baseline, route efficiency analysis, and compliance plan.",
       "Typically 6-10 weeks depending on fleet size and data coverage.",
       "Fuel usage, mileage, load factors, and logistics network data.",
-      "Emissions dashboard, reduction plan, and reporting-ready outputs.",
+      "Emissions dashboard, reduction plan, and reporting-ready outputs."
     ),
     methodSteps: defaultMethodSteps,
     proof: buildProof(
@@ -582,7 +582,7 @@ export const pageContent: Record<string, PageContent> = {
       "Property sustainability assessment, ESG roadmap, and guest-ready reporting.",
       "Typically 6-10 weeks depending on portfolio size.",
       "Energy, water, waste, and supplier data for each property.",
-      "Property scorecards, improvement plan, and disclosure templates.",
+      "Property scorecards, improvement plan, and disclosure templates."
     ),
     methodSteps: defaultMethodSteps,
     proof: buildProof(
@@ -622,7 +622,7 @@ export const pageContent: Record<string, PageContent> = {
       "Facility emissions baseline, compliance checklist, and ESG roadmap.",
       "Typically 6-12 weeks based on campus size and data access.",
       "Energy use, waste handling, and procurement data across sites.",
-      "Baseline report, improvement plan, and regulatory-ready disclosures.",
+      "Baseline report, improvement plan, and regulatory-ready disclosures."
     ),
     methodSteps: defaultMethodSteps,
     proof: buildProof(
@@ -662,7 +662,7 @@ export const pageContent: Record<string, PageContent> = {
       "Emissions baseline, decarbonization roadmap, and buyer-aligned reporting.",
       "Typically 8-12 weeks depending on plant complexity.",
       "Energy, process emissions, and supply chain data.",
-      "Inventory workbook, reduction plan, and disclosure-ready outputs.",
+      "Inventory workbook, reduction plan, and disclosure-ready outputs."
     ),
     methodSteps: defaultMethodSteps,
     proof: buildProof(
@@ -927,7 +927,7 @@ export const pageContent: Record<string, PageContent> = {
       "Engagement blueprint, governance model, and reporting cadence plan.",
       "Typically 4-6 weeks to establish the core operating system.",
       "Stakeholder input, current workflows, and existing ESG data.",
-      "Methodology playbook, templates, and a phased delivery roadmap.",
+      "Methodology playbook, templates, and a phased delivery roadmap."
     ),
     methodSteps: defaultMethodSteps,
     proof: buildProof(
@@ -967,8 +967,8 @@ export const pageContent: Record<string, PageContent> = {
       "Actionable insights, documented outputs, and decision-ready recommendations aligned with your ESG and compliance goals.",
       "Direct access to experienced ESG consultants with clear ownership and senior-level oversight.",
       "Project timelines mapped to your reporting cycles, regulatory deadlines, and business priorities.",
-      "A transparent view of required data, stakeholder involvement, and a well-defined engagement framework.",
-      "A documented engagement roadmap, governance structure, and accountability framework to support effective execution.",
+      "A transparent view of required data, stakeholder involvement, and a well-defined engagement framework."
+      // "A documented engagement roadmap, governance structure, and accountability framework to support effective execution."
     ),
     methodSteps: defaultMethodSteps,
     proof: buildProof(
@@ -1029,7 +1029,7 @@ export const pageContent: Record<string, PageContent> = {
       "Transparency into our credentials, affiliations, and advisory standards.",
       "A concise overview delivered with your vendor review timelines.",
       "Your vendor requirements, procurement criteria, and compliance needs.",
-      "Credential summaries, validation documents, and capability statements.",
+      "Credential summaries, validation documents, and capability statements."
     ),
     methodSteps: defaultMethodSteps,
     proof: buildProof(
@@ -1069,7 +1069,7 @@ export const pageContent: Record<string, PageContent> = {
       "Curated resources, case study summaries, and reusable guidance.",
       "Delivered on request with quarterly updates and refreshes.",
       "Your focus areas, industry, and reporting objectives.",
-      "Resource library access, case study briefs, and slide-ready summaries.",
+      "Resource library access, case study briefs, and slide-ready summaries."
     ),
     methodSteps: defaultMethodSteps,
     proof: buildProof(
