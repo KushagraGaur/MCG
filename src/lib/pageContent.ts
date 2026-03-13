@@ -968,7 +968,7 @@ export const pageContent: Record<string, PageContent> = {
       "Direct access to experienced ESG consultants with clear ownership and senior-level oversight.",
       "Project timelines mapped to your reporting cycles, regulatory deadlines, and business priorities.",
       "A transparent view of required data, stakeholder involvement, and a well-defined engagement framework."
-      // "A documented engagement roadmap, governance structure, and accountability framework to support effective execution."
+      
     ),
     methodSteps: defaultMethodSteps,
     proof: buildProof(
