@@ -6,24 +6,20 @@ import Link from "next/link";
 
 const valueCards = [
   {
-    title: "Reduce time-to-reporting and audit readiness",
-    description: "Get structured data capture, clear templates, and review cycles that make reporting predictable — not painful.",
-   
+    title: "Prepare for ESG and environmental audits with confidence",
+    description: "",
   },
   {
-    title: "Avoid compliance surprises",
-    description: "Stay aligned with evolving frameworks (GRI, BRSR, ISO) and reduce last-minute risk during reviews and certifications.",
-   
+    title: "Structure sustainability and compliance data that stands up to scrutiny",
+    description: "",
   },
   {
-    title: "Turn sustainability into business advantage",
-    description: "Strengthen buyer confidence, export competitiveness, and partner trust with credible, consistent disclosures.",
-  
+    title: "Avoid last-minute reporting gaps and regulatory surprises",
+    description: "",
   },
   {
-    title: "Get hands-on execution support",
-    description: "We don't just advise — we help you implement, coordinate stakeholders, and stay on track to outcomes.",
-
+    title: "Align sustainability efforts with real business and cost outcomes",
+    description: "",
   },
 ];
 
@@ -159,7 +155,8 @@ export default function ValueAccelerationVisuals() {
                 transition={{ delay: 0.1 }}
                 className="font-dm-sans text-xl text-gray-500"
               >
-                Whether you're preparing for audits, export requirements, investor scrutiny, or internal sustainability targets — we help you move from uncertainty to execution.
+ESG and sustainability are no longer optional initiatives. They directly affect regulatory compliance, access to funding, buyer eligibility, and operational risk.
+<br></br>Mirika Consulting Group helps businesses:
               </motion.p>
             </div>
             
@@ -213,6 +210,7 @@ export default function ValueAccelerationVisuals() {
               ))}
             </div>
           </div>
+          <p className="text-center font-dm-sans text-gray-600 mt-8">Our approach is designed for organizations that need clarity, execution, and accountability, not theoretical advice.</p>
 
           {/* CTA Buttons */}
           <motion.div 

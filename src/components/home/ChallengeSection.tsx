@@ -34,8 +34,8 @@ export default function ChallengeSection() {
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
               className="font-crimson text-4xl md:text-5xl lg:text-6xl leading-[0.9] tracking-tight text-black"
-            >
-              Setting and delivering on ESG and sustainability goals can feel overwhelming.
+            >ˀ
+              The real ESG challenge isn’t reporting, it’s how data is collected, structured, and validated.
             </motion.h2>
             
             {/* Content */}
@@ -61,7 +61,7 @@ export default function ChallengeSection() {
                     </div>
                   </div>
                   <p className="font-dm-sans text-lg text-gray-600">
-                    Businesses are navigating new regulations like BRSR, pressure from global buyers, and complex requirements.
+                    As ESG expectations grow, businesses are navigating evolving regulations such as BRSR, increased scrutiny from global buyers, complex carbon accounting requirements, and rising expectations from investors and communities.
                   </p>
                 </motion.div>
                 
@@ -79,7 +79,7 @@ export default function ChallengeSection() {
                     </div>
                   </div>
                   <p className="font-dm-sans text-lg text-gray-600">
-                    Many organizations are stuck in spreadsheets, disconnected data, and one-off reports that don't drive real change.
+                    Yet many organizations remain constrained by fragmented data, spreadsheet-driven workflows, and isolated reports that limit visibility and fail to drive meaningful action.
                   </p>
                 </motion.div>
                 
@@ -115,7 +115,7 @@ export default function ChallengeSection() {
                     Our Solution
                   </h3>
                   <p className="font-dm-sans text-2xl font-bold text-black">
-                    MCG exists to turn this complexity into a clear, actionable path.
+                    Mirika Consulting Group simplifies this complexity by establishing structured data processes that support credible reporting, audit readiness, and informed sustainability decisions.
                   </p>
                   <div className="mt-6 h-1 w-24 bg-mirika-forest rounded-full"></div>
                 </div>
