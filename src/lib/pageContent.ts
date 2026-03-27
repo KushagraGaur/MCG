@@ -92,7 +92,7 @@ const defaultMethodSteps: MethodStep[] = [
 },
 {
   title: "Analysis & Reporting",
-  description: "Assess performance, map findings to relevant ESG and compliance standards, and develop decision-ready outputs.",
+  description: "Map findings to applicable ESG, environmental, and compliance standards and develop decision-ready outputs.",
 },
 {
   title: "Review & Audit Readiness",
