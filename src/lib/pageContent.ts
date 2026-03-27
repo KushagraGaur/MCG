@@ -713,42 +713,35 @@ export const pageContent: Record<string, PageContent> = {
     industriesSectionDescription:
       "Our sustainability and ESG services are tailored to the regulatory, operational, and value-chain realities of each industry we serve.",
     services: [
-      {
-        title: "Sustainability Strategy & Roadmapping",
-        description:
-          "Long-term ESG goal setting, prioritization, and phased execution planning to align leadership and teams. We translate priorities into a clear, sequenced roadmap.",
-        ctaLabel: "Discuss this service",
-        ctaHref: "/contact",
-      },
-      {
-        title: "ESG Policy & Governance Design",
-        description:
-          "Governance frameworks, internal controls, and accountability models that stand up to audit scrutiny. Roles and decision rights are documented end-to-end.",
-        ctaLabel: "Discuss this service",
-        ctaHref: "/contact",
-      },
-      {
-        title: "Regulatory Readiness & Compliance Advisory",
-        description:
-          "Alignment support for BRSR, GRI, ISO, and emerging ESG requirements with a sustainability lens. We map disclosures to evidence and owners.",
-        ctaLabel: "Discuss this service",
-        ctaHref: "/contact",
-      },
-      {
-        title: "Decarbonization & Transition Planning",
-        description:
-          "Emissions reduction strategies, transition pathways, and investment-ready action plans. Focus stays on measurable impact and feasibility.",
-        ctaLabel: "Discuss this service",
-        ctaHref: "/contact",
-      },
-      {
-        title: "Training & Capacity Building",
-        description:
-          "Leadership workshops, operational training, and ESG enablement for cross-functional teams. We build internal confidence for sustained execution.",
-        ctaLabel: "Discuss this service",
-        ctaHref: "/contact",
-      },
-    ],
+  {
+    title: "ESG Reporting & Audit Readiness",
+    description:
+      "Support for BRSR, GRI, CDP, and ESG audits through structured data collection, validation, and documentation—ensuring accuracy, credibility, and audit confidence.",
+    ctaLabel: "Request Proposal",
+    ctaHref: "/contact",
+  },
+  {
+    title: "ISO & Sustainability Certifications",
+    description:
+      "End-to-end support for ISO 14001, ISO 45001, ISO 9001, Ecotel, IGBC, and other relevant certifications—from gap assessment to audit readiness.",
+    ctaLabel: "Request Proposal",
+    ctaHref: "/contact",
+  },
+  {
+    title: "Climate & ESG Data Management",
+    description:
+      "Scope 1–3 carbon accounting, emissions mapping, and ESG data structuring that enables transparent disclosures, credible reporting, and informed decision-making.",
+    ctaLabel: "Request Proposal",
+    ctaHref: "/contact",
+  },
+  {
+    title: "Compliance & Risk Management Support",
+    description:
+      "Advisory and execution support to meet environmental, ESG, and sustainability-related regulatory, buyer, and investor requirements—without operational disruption.",
+    ctaLabel: "Request Proposal",
+    ctaHref: "/contact",
+  },
+],
     industries: [
       {
         title: "Textiles",

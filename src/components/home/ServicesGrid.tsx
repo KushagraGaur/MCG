@@ -2,29 +2,24 @@ import MainLayout from "@/components/layout/MainLayout";
 
 const services = [
   {
-    title: "ESG & Sustainability Advisory",
+    title: "ESG Reporting & Audit Readiness",
     description:
-      "Strategy, governance, and implementation support to embed ESG into decision-making.",
+      "Support for BRSR, GRI, CDP, and ESG audits through structured data collection, validation, and documentation—ensuring accuracy, credibility, and audit confidence.",
   },
   {
-    title: "BRSR & ESG Reporting",
+    title: "ISO & Sustainability Certifications",
     description:
-      "Simplify disclosures with data models, templates, and guidance aligned to new regulations.",
+      "End-to-end support for ISO 14001, ISO 45001, ISO 9001, Ecotel, IGBC, and other relevant certifications—from gap assessment to audit readiness.",
   },
   {
-    title: "Carbon Accounting & Footprinting",
+    title: "Climate & ESG Data Management",
     description:
-      "Measure Scope 1, 2, and 3 emissions with auditable baselines and reduction pathways.",
+      "Scope 1–3 carbon accounting, emissions mapping, and ESG data structuring that enables transparent disclosures, credible reporting, and informed decision-making.",
   },
   {
-    title: "Carbon Projects & Credits",
+    title: "Compliance & Risk Management Support",
     description:
-      "Identify, evaluate, and monitor projects and credits that align with your climate goals.",
-  },
-  {
-    title: "Training & Capacity Building",
-    description:
-      "Equip teams with practical ESG knowledge through workshops, playbooks, and tooling.",
+      "Advisory and execution support to meet environmental, ESG, and sustainability-related regulatory, buyer, and investor requirements—without operational disruption.",
   },
 ];
 

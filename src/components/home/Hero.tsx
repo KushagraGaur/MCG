@@ -45,11 +45,12 @@ export default function Hero() {
               Talk to Our ESG Experts
             </Link>
             <Link
-              href="/services"
+              href="/sustainability-consulting/our-services"
               className="inline-flex items-center justify-center bg-mirika-forest text-white text-sm font-dm-sans font-bold px-8 py-4 rounded-full hover:bg-[#2C554A] transition min-w-[200px]"
             >
               Explore Our Services
             </Link>
+        
           </div>
           
           {/* Tablet - Fixed in place, no movement */}
